@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASSWORD GENERATOR</title>
+
+    <link rel="stylesheet" href="/PASSWORD_GENERATOR/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="tagLine">The Password Generator</h1>
+    </header>
+    
+    <section class="input-collection">
+        <div class="container">
+            <form action="" class="user-input" id="my-form">
+                <label for="first-word">First Word:</label>
+                <input type="text" id="first-word" name="first-word" required minlength="5" maxlength="25" placeholder="Enter the first word...">
+                <label for="second-word">Second word:</label>
+                <input type="text" id="second-word" name="second-word" required minlength="5" maxlength="25" placeholder="Enter the second word...">
+                <label for="third-word">Third word:</label>
+                <input type="text" id="third-word" name="third-word" placeholder="Enter the third word...">
+                <label for="first-number">First Number</label>
+                <input type="number" id="first-number" name="first-number" required maxlength="1" placeholder="Enter the first number...">
+                <label for="second-number">Second Number</label>
+                <input type="number" name="second-number" id="second-number" placeholder="Enter the second number...">
+                <label for="first-symbol">First Symbol</label>
+                <input type="text" name="first-symbol" id="first-symbol" required maxlength="1" placeholder="Enter the first symbol...">
+                <label for="second-symbol">Second Symbol</label>
+                <input type="text" name="first-symbol" id="first-symbol" placeholder="Enter the second symbol...">
+            </form>
+            <button type="submit" form="my-form" class="btn">GENERATE</button>
+        </div>
+    </section>
+    
+    <script src="/PASSWORD_GENERATOR/js/app.js"></script>
+</body>
+</html>
