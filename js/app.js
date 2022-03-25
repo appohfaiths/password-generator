@@ -27,6 +27,7 @@ function generatePassword(e) {
     }
 
     //create a string of the combination of letters
+    generateString(firstWord, secondWord, thirdWord);
 
     //add one number
 
@@ -91,4 +92,19 @@ function compareSymbols (sym1 ,sym2) {
         const newSym = firstSymbol.value + secondSymbol.value;
         console.log(newSym);
     }
+}
+
+function generateString (word1, word2, word3) {
+    word1 = firstWord.value.toString();
+    word2 = secondWord.value.toString();
+    word3 = thirdWord.value.toString();
+    let passWord = ' '
+    const wordLength = 15;
+    for (let i = 0; i < wordLength; i++) {
+     passWord += word1.charAt(Math.floor(Math.random() * wordLength)) + 
+     word2.charAt(Math.floor(Math.random() * wordLength)) +
+     word3.charAt(Math.floor(Math.random() * wordLength));  
+    } 
+    console.log(passWord);
+
 }
